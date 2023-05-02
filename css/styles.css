@@ -1,0 +1,584 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(75, 0, 0);
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ----- HEADER ----- */
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Formula1";
+    width: 100%;
+    height: 75px;
+    background-color: #000000;
+}
+header > nav > ul > li{
+    margin: 0 13px 0 13px;
+}
+#logo, #pages{
+    position: relative;
+}
+#logo > img{
+    height: 76px;
+    margin-left: 13px;
+}
+#liens{
+    list-style: none;
+    display: inline-flex;
+    font-weight: bold;
+}
+#liens > li > a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+#liens > li > a:hover{
+    color: #ED1D24;
+}
+
+.non-actif{
+    color: #F5F7F7;
+}
+
+.actif{
+    color: #ED1D24;
+}
+
+/* ---------- INDEX ---------- */
+
+#fond-f1{
+    display: flex;
+    height: 640px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/ferrari.jpg);
+    background-size: 110%;
+    background-position: 50% 32%;
+    background-repeat: no-repeat;
+}
+#titre{
+    position: relative;
+    font-weight: 900;
+    color: #F5F7F7;
+    text-shadow: 0px 20px 35px #000407;
+    text-align: center;
+}
+#index-titre1{
+    font-size: 25px;
+    text-shadow: 0px 10px 12px #000000;
+}
+#index-titre2{
+    font-size: 60px;
+    font-family: "Formula1";
+    text-shadow: 0px 10px 12px #000000;
+}
+
+/* ----- */
+
+h1{
+    color: #FFFFFF;
+    font-family: "Formula1";
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 8px #ED1D24;
+}
+
+#histoire-f1, #f1-today{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 300px;
+}
+
+#histoire-f1_texte{
+    width: 48%;
+    display: inline-block;
+    margin-right: 20px;
+}
+#histoire-f1_image{
+    width: 48%;
+    height: 270px;
+    background-image: url(../images/mercedes.jpg);
+    background-position: 0% 26%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#histoire-f1_texte > p, #f1-today_texte > p{
+    font-size: 17px;
+    text-align: justify;
+}
+
+#f1-today_texte{
+    width: 48%;
+    text-align: right;
+    margin-left: 20px;
+    display: inline-block;
+}
+#f1-today_image{
+    width: 48%;
+    height: 270px;
+    background-image: url(../images/redbull.jpg);
+    background-position: 50% 38%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/* ----- DONNEES ----- */
+
+table{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border-color: #000;
+}
+thead{
+    background-color: rgba(0, 0, 0, 0.80);
+}
+table > tbody{
+    background-color: rgba(0, 0, 0, 0.60);
+}
+th, td{
+    text-align: center;
+    margin: 0 10px 0 10px;
+    padding: 7px;
+}
+#main_donnees{
+    margin: 0 auto;
+    width: 1080px;
+    margin-bottom: 29px;
+}
+#diffusion{
+    text-align: center;
+    font-size: small;
+}
+
+/* ----- RÉFÉRENCES ----- */
+
+h2{
+    color: #FFFFFF;
+    font-family: "Formula1";
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0px 5px 8px #ED1D24;
+}
+h3{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 22.5px;
+}
+h3 > a{
+    color: #FFF;
+    font-weight: 600;
+    text-decoration: dashed;
+    transition: 0.4s;
+}
+h3 > a:hover{
+    font-size: 105%;
+}
+
+/* ----- CONTACT -----*/
+
+#main-contact{
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+}
+#contact{
+    padding: 40px 0 30px 0;
+    border-radius: 20px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.60);
+    margin-bottom: 30px;
+}
+#h1-contact{
+    margin-top: 25px;
+}
+#contact > form{
+    margin: 0 auto;
+    width: 500px;
+    box-sizing: border-box;
+}
+#en-tete{
+    display: flex;
+    justify-content: space-between;
+}
+#en-tete > div{
+    display: inline-block;
+}
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+#nom, #prenom{
+    height: 30px;
+    border: unset;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    padding-left: 5px;
+}
+label{
+    text-align: left;
+    margin-bottom: 5px;
+}
+#email{
+    height: 30px;
+    width: 495px;
+    border: unset;
+    padding: unset;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-left: 5px;
+}
+input[type="text"], input[type="email"]{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 495px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.radio-container{
+    display: flex;
+    width: calc(100% - 3px);
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.radio-container > div{
+    display: flex;
+    align-items: baseline;
+}
+#envoyer{
+    cursor: pointer;
+    display: block;
+    border: unset;
+    font-family: "Formula1";
+    background-color: #FFFFFF;
+    color: #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 30%;
+    height: 40px;
+    transition: 0.4s;
+}
+#envoyer:hover{
+    background-color: #ED1D24;
+    color: #FFFFFF;
+    font-size: 85%;
+}
+label{
+    display: block;
+    font-family: "Formula1";
+}
+#en-tete > div > label > span, #contact > form > div > label > span{
+    color: #ED1D24;
+}
+#champ-oblig{
+    text-align: center;
+    color: #ED1D24;
+    font-size: 10px;
+}
+
+/* ----- ENVOI MAIL ----- */
+
+#main-envoi, #main-upload{
+    margin: 0 auto;
+    width: 1080px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 81.3vh;
+    text-align: center;
+}
+#retour{
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    width: 80px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: 0.4s;
+}
+#retour > a{
+    font-family: "Formula1";
+    font-size: 15px;
+    color: #000;
+    text-decoration: dashed;
+    transition: 0.4s;
+}
+#retour:hover{
+    background-color: #ED1D24;
+}
+#retour:hover > a{
+    color: #FFFFFF;
+}
+/* ----- GALERIE ----- */
+
+#main-galerie{
+    font-family: "Montserrat";
+    margin: 0 auto;
+    text-align: center;
+    width: 1080px;
+    margin-bottom: 50px;
+}
+#main-galerie > form{
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.60);
+    margin-bottom: 20px;
+}
+#main-galerie > label{
+    text-align: center;
+}
+input[type="submit"]{
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #000;
+    background-color: #FFFFFF;
+    font-family: "Formula1";
+    transition: 0.4s;
+}
+input[type="submit"]:hover{
+    color: #FFFFFF;
+    background-color: #ED1D24;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 1080px;
+    flex-wrap: wrap;
+}
+.container > img{
+    width: 22.5%;
+    border-radius: 10px;
+    margin: 0 12px 30px 12px;
+    transition: 0.2s;
+}
+.container > img:hover{
+    filter: grayscale(100%);
+}
+
+/* ----- PARTENAIRES ----- */
+
+.center-container{
+    margin: 0 auto;
+    width: 1080px;
+    margin-bottom: 30px;
+}
+.center-container p{
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 18.1px;
+}
+.card > h3{
+    font-size: 25px;
+    font-family: "Formula1";
+}
+.images-container > h4{
+    font-family: "Formula1";
+}
+.images-container{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.images-container img{
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.images-container img:hover{
+    transform: scale(1.01);
+}
+
+.images-container > li > a{
+    margin: unset;
+    font-size: 20px;
+    font-family: "Formula1";
+    line-height: 28px;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.cards-container > a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.card-container{
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.60);
+    box-shadow: 0 0px 10px #000;
+}
+
+.card-container:hover{
+    cursor: pointer;
+}
+
+.card-container:hover > div:not(.card){
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    backdrop-filter: blur(2.5px)
+                     grayscale(50%);
+    -webkit-backdrop-filter: blur(2.5px)
+                     grayscale(50%);
+}
+
+.card-container > p{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    font-size: 15px;
+    font-family: "Formula1";
+    transition: 0.3s;
+    padding: 15px 0;
+    background-color: #000;
+}
+
+.card-container:hover > p{
+    opacity: 1;
+}
+
+.card{
+    width: calc(100% - 40px);
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.card-content{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 20px;
+    align-items: center;
+
+}
+.img-container > img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.img-container > h4{
+    font-size: 14px;
+    font-family: "Formula1";
+    text-align: center;
+    margin: 5px 0;
+}
+
+#livrables{
+    margin: 20px auto 50px auto;
+    width: fit-content;
+}
+#charte-projet, #planning{
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 15px 0 15px;
+    transition: 0.4s;
+}
+#charte-projet a, #planning a{
+    padding: 10px;
+    text-decoration: dashed;
+    font-family: "Formula1";
+    color: #000;
+    transition: 0.4s;
+}
+#charte-projet:hover, #planning:hover{
+    background-color: #ED1D24;
+}
+#charte-projet:hover a, #planning:hover a{
+    color: #FFF;
+}
+
+/* ----- FOOTER ----- */
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Formula1";
+    font-size: 12px;
+    width: 100%;
+    background-color: #000000;
+    color: #FFF;
+    padding: 10px 0 10px 0;
+}
+#ref, #site-perso{
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#ref:hover, #site-perso:hover{
+    color: #ED1D24;
+}
+@font-face {
+    font-family: "Formula1";
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.ttf);
+}
